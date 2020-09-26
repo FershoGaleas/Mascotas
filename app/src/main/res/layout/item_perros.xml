@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="377dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="36dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carta"
+            android:layout_width="356dp"
+            android:layout_height="326dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.092"
+            card_view:cardCornerRadius="10dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imagenes"
+
+                    android:layout_width="368dp"
+                    android:layout_height="280dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/huesoblanco"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/huesot" />
+
+                    <TextView
+                        android:id="@+id/nombreperro"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Marmaduck"
+                        android:textSize="22sp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="70dp">
+
+                        <TextView
+                            android:id="@+id/numerohueso"
+                            android:layout_width="25dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="7dp"
+                            android:text="5"
+                            android:textSize="25sp"></TextView>
+
+                        <ImageView
+                            android:id="@+id/huesoamarillo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/huesoc"></ImageView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
